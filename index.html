@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='https://unpkg.com/tesseract.js@v2.0.0-alpha.13/dist/tesseract.min.js'></script>
+  <link rel="stylesheet" href="asset/css/style.css">
+  <script src="asset/js/script.js"></script>
+  <title>Iseein: Pemindai dan Pengisi Voucher</title>
+</head>
+
+<body>
+  <!--   Ini Bagian Header -->
+  <header>
+    <img src="asset/img/Logo Iseein.png" alt="Logo Iseein">
+  </header>
+  <div class="container">
+    <h2>Silahkan Pilih Provider</h2>
+      <form action="pengisi-voucher.php" method="post">
+        <label for="code">Kode Voucher</label>
+        <input type="text" name="code" id="code" placeholder="Kode Voucher">
+        <button type="submit" name="submit">Pengisi</button>
+       <div class="footer">
+        <p>Designed and Developed With ❤ By Akbarhlubis</p>
+        <sub>Made n Indonesia</sub>
+       </div> 
+  </div>
+  <br>
+  <sub><em>*Program ini tidak disponsori oleh pihak manapun</em></sub>
+  <script src="js/tesseract-ocr.js"></script>
+</body>
+
+</html>
