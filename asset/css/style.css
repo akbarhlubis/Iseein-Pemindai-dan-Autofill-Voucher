@@ -37,14 +37,34 @@ h2{
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
-.inputan {
-  display: flex;
+#input {
   background-color: white;
   padding: 10px;
-  width: auto;
+  border-radius: 5px;
+  border: none;
   flex-direction: column;
   align-items: center;
   font-family: "Nunito", sans-serif;
+}
+
+.submit{
+  background: #263238;
+  color: white;
+  border-radius: 4px;
+  width: auto;
+  height: 30px;
+  border:none;
+}
+.pil-provider{
+  display: flex;
+  align-items: center;
+}
+
+con-output{
+  display: flex;
+  flex-direction: coloumn;
+  align-items: center;
+  justify-content: center;
 }
 .footer{
     display: flex;
