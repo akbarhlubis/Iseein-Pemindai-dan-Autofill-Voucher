@@ -18,8 +18,19 @@
 
   <div class="container">
     <div class="input-kode-voucher">
-      <h3>Masukan Kode Voucher Provi. Tri</h3>
-      <input class="input" type="text" id="inputKode" placeholder="Maksimal 16 Digit" maxlength="16" inputmode="numeric" onkeypress="return onlyNumberKey(event)">
+
+      <h3>Masukan Kode dan Pilih Provider</h3>
+      <div class="input-dan-pilih-provider">        
+        <select class="dropdown" id="mySelect">
+          <option value="tri">Tri</option>
+          <option value="telkomsel">Telkomsel</option>
+          <option value="xl">XL</option>
+          <option value="axis">Axis</option>
+          <option value="indom3">Indosat/m3</option>
+          <option value="smartfren">Smartfren</option>
+        </select>
+        <input class="input" type="text" id="inputKode" placeholder="Maksimal 16 Digit" maxlength="16" inputmode="numeric" onkeypress="return onlyNumberKey(event)">
+      </div>
       <input class="button" type="button" value="Proses" id="buttonProses" onclick="inputOutput()">
     </div>
 

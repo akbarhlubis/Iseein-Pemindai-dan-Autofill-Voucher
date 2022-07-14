@@ -34,6 +34,29 @@ header h1 {
   border-radius: 10px;
 }
 
+.input-dan-pilih-provider{
+  display: flex;
+  flex-direction: start;
+  align-items: center;
+  gap: 10px;
+}
+.pilih-provider{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dropdown {
+  text-align: center;
+  width: 200px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 6px;
+  height: 42px;
+  width: 100%;
+}
+
 .input-kode-voucher {
   display: flex;
   flex-direction: column;
