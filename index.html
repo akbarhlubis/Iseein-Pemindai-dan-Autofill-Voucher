@@ -15,39 +15,35 @@
   <header>
     <img src="asset/img/Logo Iseein.png" alt="Logo Iseein">
   </header>
+
   <div class="container">
-    
-    <div class="pil-provider">
-      <h2>Silahkan Pilih Provider</h2>
-      <input type="radio" name="provider" value="tri" />
-      <label for="tri">Tri</label>
-      <input type="radio" name="provider" value="telkomsel" />
-      <label for="telkomsel">Telkomsel</label>
+    <div class="input-kode-voucher">
+      <h3>Masukan Kode Voucher Provi. Tri</h3>
+      <input class="input" type="text" id="inputKode" placeholder="Maksimal 16 Digit" maxlength="16" inputmode="numeric" onkeypress="return onlyNumberKey(event)">
+      <input class="button" type="button" value="Proses" id="buttonProses" onclick="inputOutput()">
     </div>
 
-    <div class="ui">
-      <p class="ui header">Input</p>
-      <div class="ui large fluid input">
-        <input id="input" name="input" />
-      </div>
-    </div>
-  
-    <div class="ui">
-      <p class="ui header">Preview</p>
-      <div id="preview" class="ui">
-        <p id="output"></p>
+    <div class="output-hasil">
+      <h3>Hasil Proses</h3>
+      <div class="output-canvas">
+        <input class="output" type="text" id="outputKode" disabled>
+        <div class="tooltip">
+          <button class="salin" onclick="myFunction()" onmouseout="outFunc()">
+            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+            Salin
+          </button>
+        </div>
       </div>
     </div>
 
-    <div id="render" class="ui">
-      <input id="Proses" type="button" value="Submit" onclick="InputOutput()">
-      </div>
+    <div class="footer">
+      <p>Designed and Developed With ❤ By Akbarhlubis</p>
+      <sub>Made In Indonesia</sub>
     </div>
-  
-        
   </div>
-  <br>
   <sub><em>*Program ini tidak disponsori oleh pihak manapun</em></sub>
+
+  <script type='text/javascript' src='https://cdn.trakteer.id/js/embed/trbtn.min.js'></script><script type='text/javascript'>(function(){var trbtnId=trbtn.init('Dukung Saya di Trakteer','#be1e2d','https://trakteer.id/akbarhlubis','https://cdn.trakteer.id/images/embed/trbtn-icon.png','40');trbtn.draw(trbtnId);})();</script>
   <script src="js/tesseract-ocr.js"></script>
   <script src="asset/js/script.js"></script>
 </body>
