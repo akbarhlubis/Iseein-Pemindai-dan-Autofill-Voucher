@@ -9,6 +9,8 @@ let urlsToCache = [
     "/components/images",
     "/components/images/favicon.ico", 
     "/components/images/Logo Iseein.png",
+    "/components/images/favicon-16x16.png",
+    "/components/images/manifest-icon.png",
     "/components/scripts",
     "/components/scripts/script.js", 
     "/components/scripts/pwa-handler.js",
