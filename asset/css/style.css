@@ -1,11 +1,11 @@
 /* Import Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background-color: #5076D9;
+  background-color: #5076d9;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,36 +32,38 @@ header h1 {
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
-h3{
+h3 {
   font-size: 16px;
   color: #145364;
 }
 
-.input-dan-pilih-provider{
+.input-dan-pilih-provider {
   display: flex;
-  flex-direction: start;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 6px;
   gap: 10px;
 }
-.pilih-provider{
+.pilih-provider {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .dropdown {
   text-align: center;
-  width: 220px;
+  width: 100px;
   text-align: center;
   background: #ffffff;
   border-radius: 10px;
   border: none;
-  margin-bottom: 6px;
-  height: 42px;
+  height: 47px;
   width: 100%;
 }
 
 .input-kode-voucher {
   display: flex;
+  text-align: center;
   flex-direction: column;
 }
 
@@ -70,8 +72,7 @@ h3{
   background: #ffffff;
   border-radius: 10px;
   border: none;
-  margin-bottom: 6px;
-  height: 42px;
+  height: 47px;
 }
 
 .button {
@@ -82,7 +83,19 @@ h3{
   border-radius: 10px;
   border: none;
 }
-
+#charCount {
+  display: flex;
+  color: white;
+  font-weight: bold;
+  height: 47px;
+  width: 100px;
+  background: #263238;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 .salin {
   color: white;
   font-weight: bold;
@@ -118,7 +131,7 @@ h3{
   align-items: center;
   text-align: center;
 }
-.footer p{
+.footer p {
   margin-bottom: -3px;
   font-size: 12px;
 }
@@ -126,7 +139,7 @@ sub {
   color: white;
   text-align: center;
   align-items: center;
-  font-weight:thin;
+  font-weight: thin;
 }
 
 .tooltip {
@@ -190,6 +203,7 @@ sub {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   transition: all 0.3s;
 }
-.action-button:hover {
+button.salin:hover {
   background: blue;
+  transition: all 0.3s;
 }

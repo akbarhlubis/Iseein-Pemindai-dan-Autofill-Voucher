@@ -37,6 +37,24 @@ function inputOutput() {
   }
 }
 
+(() => {
+  const counter = (() => {
+    const input = document.getElementById("inputKode"),
+      display = document.getElementById("charCount"),
+      changeEvent = (evt) => (display.innerHTML = evt.target.value.length),
+      getInput = () => input.value,
+      countEvent = () => input.addEventListener("keyup", changeEvent),
+      init = () => countEvent();
+
+    return {
+      init: init
+    };
+  })();
+
+  counter.init();
+})();
+
+
 // function myFunction() {
 //   /* Get the text field */
 //   var copyText = document.getElementById("outputKode");
