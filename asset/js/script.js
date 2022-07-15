@@ -1,3 +1,5 @@
+var clipboard = new ClipboardJS('.btn');
+
 function onlyNumberKey(evt) {
   // Only ASCII character in that range allowed
   var ASCIICode = evt.which ? evt.which : evt.keyCode;
@@ -35,17 +37,17 @@ function inputOutput() {
   }
 }
 
-function myFunction() {
-  /* Get the text field */
-  var copyText = document.getElementById("outputKode");
+// function myFunction() {
+//   /* Get the text field */
+//   var copyText = document.getElementById("outputKode");
 
-  /* Select the text field */
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+//   /* Select the text field */
+//   copyText.select();
+//   copyText.setSelectionRange(0, 99999); /* For mobile devices */
 
-  /* Copy the text inside the text field */
-  navigator.clipboard.writeText(copyText.value);
+//   /* Copy the text inside the text field */
+//   navigator.clipboard.writeText(copyText.value);
 
-  /* Alert the copied text */
-  alert("Copied the text: " + copyText.value);
-}
+//   /* Alert the copied text */
+//   alert("Copied the text: " + copyText.value);
+// }

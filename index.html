@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src='https://unpkg.com/tesseract.js@v2.0.0-alpha.13/dist/tesseract.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
   <link rel="stylesheet" href="asset/css/style.css">
   <title>Iseein: Pemindai dan Pengisi Voucher</title>
 </head>
@@ -37,9 +38,9 @@
     <div class="output-hasil">
       <h3>Hasil Proses</h3>
       <div class="output-canvas">
-        <input class="output" type="text" id="outputKode" disabled>
+        <input class="output" type="text" readonly="readonly" id="outputKode">
         <div class="tooltip">
-          <button class="salin" onclick="myFunction()" onmouseout="outFunc()">
+          <button class="salin btn" data-clipboard-target="#outputKode">
             <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
             Salin
           </button>
@@ -49,7 +50,7 @@
 
     <div class="footer">
       <p>Designed and Developed With ❤ By Akbarhlubis</p>
-      <sub>Made In Indonesia</sub>
+      <p><strong>Made In Indonesia</strong></p>
     </div>
   </div>
   <sub><em>*Program ini tidak disponsori oleh pihak manapun</em></sub>
