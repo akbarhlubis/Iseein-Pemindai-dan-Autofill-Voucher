@@ -13,7 +13,7 @@ let urlsToCache = [
     "/components/scripts/script.js", 
     "/components/scripts/pwa-handler.js",
     "/components/styles",
-    "/components/styles/main.css"
+    "/components/styles/style.css"
 ];
 
 // Cache all the selected items once application is installed.
