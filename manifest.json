@@ -1,18 +1,21 @@
 {
-  "name": "Iseein: Pengisi Kode Voucher",
-  "short_name": "Iseein",
-  "theme_color": "#fff",
-  "background_color": "#fff",
+  "background_color": "#ffffff",
+  "description": "Projek ini bermula dari kendala yang sering terjadi oleh saya ketika sedang mengisi kode voucher, khususnya untuk paket internet, oleh karena itu disimpulkan beberapa alasan kenapa penting untuk menemuka pemecahan masalah tersebut.",
+  "dir": "ltr",
   "display": "standalone",
-  "orientation": "portrait",
+  "name": "Iseein: Pengisi Kode Voucher",
+  "orientation": "any",
   "scope": "/",
+  "short_name": "Iseein",
   "start_url": "/",
+  "theme_color": "#fff",
+  "categories": [],
+  "screenshots": [],
   "icons": [
     {
-        "src": "/components/images/manifest-icon.png",
-        "type": "image/png",
-        "sizes": "512x512",
-        "purpose": "any maskable"
+      "src": "components/images/favicon.ico",
+      "type": "image/x-icon"
     }
-]
+  ],
+  "shortcuts": []
 }
