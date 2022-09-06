@@ -10,10 +10,9 @@
   <link rel="shortcut icon" href="components/images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="components/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="components/styles/style.css">
-  <meta name="theme-color" content="#fff" />
-  <title>Iseein: Pemindai dan Pengisi Voucher</title>
-<script>navigator.serviceWorker.register("components/scripts/sw.js")</script> 
+  <script>navigator.serviceWorker.register("service-worker.js")</script>
   <link rel="manifest" href="/manifest.json" />
+  <title>Iseein: Pemindai dan Pengisi Voucher</title>
 </head>
 
 <body>
@@ -26,7 +25,7 @@
     <div class="input-kode-voucher">
 
       <h3>Masukan Kode dan Pilih Provider</h3>
-      <div class="input-dan-pilih-provider">        
+      <div class="input-dan-pilih-provider">
         <select class="dropdown" id="mySelect">
           <option value="tri">Tri</option>
           <option value="telkomsel">Telkomsel</option>
@@ -35,7 +34,8 @@
           <option value="indom3">Indosat/m3</option>
           <option value="smartfren">Smartfren</option>
         </select>
-        <input class="input" type="text" id="inputKode" placeholder="Maksimal 16 Digit" maxlength="16" inputmode="numeric" onkeypress="return onlyNumberKey(event)">
+        <input class="input" type="text" id="inputKode" placeholder="Maksimal 16 Digit" maxlength="16"
+          inputmode="numeric" onkeypress="return onlyNumberKey(event)">
         <span id="charCount">0</span>
       </div>
       <input class="button" type="button" value="Proses" id="buttonProses" onclick="inputOutput()">
@@ -61,10 +61,25 @@
   </div>
   <sub><em>*Program ini tidak disponsori oleh pihak manapun</em></sub>
 
-  <script type='text/javascript' src='https://cdn.trakteer.id/js/embed/trbtn.min.js'></script><script type='text/javascript'>(function(){var trbtnId=trbtn.init('Traktir Gorengan','#be1e2d','https://trakteer.id/akbarhlubis/tip','https://cdn.trakteer.id/images/embed/trbtn-icon.png','40');trbtn.draw(trbtnId);})();</script>
+  <script type='text/javascript' src='https://cdn.trakteer.id/js/embed/trbtn.min.js'></script>
+  <script
+    type='text/javascript'>(function () { var trbtnId = trbtn.init('Traktir Gorengan', '#be1e2d', 'https://trakteer.id/akbarhlubis/tip', 'https://cdn.trakteer.id/images/embed/trbtn-icon.png', '40'); trbtn.draw(trbtnId); })();</script>
   <script src="components/scripts/script.js"></script>
-  <script src="components/scripts/pwabuilder-sw-register.js"></script>
-  <script src="components/scripts/sw.js"></script>
+  <script>
+    var BASE_URL = '<?= base_url() ?>';
+    document.addEventListener('DOMContentLoaded', init, false);
+
+    function init() {
+      if ('serviceWorker' in navigator && navigator.onLine) {
+        navigator.serviceWorker.register(BASE_URL + 'service-worker.js')
+          .then((reg) => {
+            console.log('Registrasi service worker Berhasil', reg);
+          }, (err) => {
+            console.error('Registrasi service worker Gagal', err);
+          });
+      }
+    }
+  </script>
 </body>
 
 </html>
