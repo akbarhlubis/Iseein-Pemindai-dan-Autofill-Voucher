@@ -3,7 +3,7 @@ const CACHE_NAME  = 'iseein';
 
 /* Add relative URL of all the static content you want to store in
  * cache storage (this will help us use our app offline)*/
-let resourcesToCache = ["/components/scripts/script.js","/components/styles/style.css"];
+let resourcesToCache = ["components/scripts/script.js","components/styles/style.css"];
 
 self.addEventListener("install", e=>{
     e.waitUntil(
