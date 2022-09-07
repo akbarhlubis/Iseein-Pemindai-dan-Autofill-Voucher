@@ -22,7 +22,7 @@
         "purpose": "any maskable"
     }
   ],
-  "start_url": "/Iseein-Pemindai-dan-Autofill-Voucher",
+  "start_url": "/Iseein-Pemindai-dan-Autofill-Voucher/index.html",
   "display": "standalone",
   "theme_color": "#f45",
   "background_color": "#fff"
