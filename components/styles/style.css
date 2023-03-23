@@ -233,3 +233,16 @@ button.salin:active {
   scale: 0.95;
   transition: all 0.5s;
 }
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .buka{
+    display: none;
+  }
+}
+
+@media (max-width: 670px) {
+  .buka{
+    display: block;
+  }
+}
